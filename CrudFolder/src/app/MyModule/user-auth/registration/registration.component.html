@@ -1,0 +1,48 @@
+<div class="outer">
+    <div class="fieldset">
+        <form class="example-form" #form="ngForm" (ngSubmit)="saveData(form.value)">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Enter Name</mat-label>
+                <input type="text" ngModel name="name" matInput placeholder="Full Name" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Mobile No</mat-label>
+                <input type="text" ngModel name="mobile" matInput placeholder="Contact Number" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>DoB</mat-label>
+                <input type="date" ngModel name="dob" matInput placeholder="Select DoB" min="1990-01-01"
+                    max="2000-12-31" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Enter Username</mat-label>
+                <input type="text" ngModel name="username" matInput placeholder="User Name" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Enter Password</mat-label>
+                <input type="password" ngModel name="password" matInput placeholder="Enter Password" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Enter Address</mat-label>
+                <textarea matInput placeholder="Address"></textarea>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="example-full-width">
+                <mat-label>Select Department</mat-label>
+                <select matNativeControl required name="department">
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="IT Support">IT Support</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </mat-form-field> <br>
+
+
+            <button mat-raised-button color="primary">Signup</button> | <a routerLink="/login">Already registered?</a>
+
+        </form>
+
+
+    </div>
+    <br>
+    <br>
+</div>

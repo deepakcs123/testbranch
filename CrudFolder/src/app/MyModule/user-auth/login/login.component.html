@@ -1,0 +1,14 @@
+<div class="fieldset">
+  <form class="example-form" #form="ngForm" (ngSubmit)="getData(form.value)">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Enter Username</mat-label>
+      <input type="text" ngModel name="username" matInput placeholder="User Name" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Enter Password</mat-label>
+      <input type="password" ngModel name="password" matInput placeholder="Enter Password" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Login</button> | <a routerLink="/forget">Forgot Password?</a> | <a routerLink="/signup">Signup !! </a>
+  </form>
+
+</div>
